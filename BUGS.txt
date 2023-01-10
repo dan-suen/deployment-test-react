@@ -1,0 +1,5 @@
+
+-Sign up page CSS not rendered properly -- Donny should do this
+-join button should not exist when not logged in -- Donny should do this
+  => if hostid = userid disable join button 
+events footer showing wrong event date in users -- will be doing Edgar

@@ -1,0 +1,62 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/mixins.scss";
+
+.card-main {
+  @include flex($d: row);
+  height: 400px;
+  border-color: $light-blue;
+  &__body {
+      width: 100%;
+      @include flex($c:space-between);
+    &__image-div {
+     
+      width: 30%;
+      height: 300px;
+      overflow: hidden;
+      border: 1px solid;
+      border-radius: 5%;
+      margin:2em 1em;
+
+      img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+      }
+    }
+
+    &__content {
+      @include flex($d: column);
+      width: 65%;
+      
+
+      .title-card {
+        @include flex($c:space-between);
+        margin:1em;
+        height: 20%;
+        border-bottom: 1px solid;
+      }
+
+      .card-content {
+        height:80%;
+        font-family: $font-sans;
+        font-size: medium;
+        font-weight: bold;
+        color: $dark-blue;
+      }
+
+      .footer-card {
+        color: $blue;
+      }
+
+    }
+
+    &__content:hover {
+      background-color: $light-blue;
+    }
+  }
+}
+
+.card-main:hover {
+  background-color: $light-blue;
+}

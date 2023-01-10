@@ -1,0 +1,91 @@
+@import "/src/styles/variables.scss";
+@import "/src/styles/mixins.scss";
+
+div.card{
+  border-color:$mellow-purple;
+}
+
+.card-class{
+  @include flex;
+  font-size: 16px;
+  height: 400px;
+  &:hover{
+   background-color: $light-blue;
+  }
+}
+
+
+.btn-success{
+  background-color: greenyellow;
+  color: black;
+  width:100px;
+  height: 40px;
+  margin-bottom: 1em;
+}
+
+.content{
+  font-size: large;
+ div{
+  display: flex;
+  background-color: $light-blue;
+  &.header{
+    display: flex;
+    justify-content: space-between;
+  }
+ }
+ p{
+  display: flex;
+  text-align: left;
+ }
+}
+.card-body{
+  padding:0px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 400px;
+ 
+  .col-md-4{
+    max-width: 15em;
+    height: 350px;
+    overflow: hidden;
+    border: 1px solid;
+    border-radius: 5%;
+    margin:auto;
+    img{
+      border-radius: 10%;
+      
+      margin-left: -75px
+    }
+  }
+}
+.titlecard{
+  display: flex;
+  color: $dark-blue;
+  font-size: $medium;
+  justify-content: space-between;
+  padding:1em 1em 0em 1em;
+  .title{
+    .card-title{
+      text-align: start;
+    }
+    .comment-number{
+      margin:0px;
+    }
+  }
+}
+.card-footer{
+  display: flex;
+  justify-content: space-between;
+}
+.comment-number{
+  text-align: left;
+}
+.card-text{
+  margin:0.5em
+}
