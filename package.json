@@ -35,7 +35,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass-watch": "sass styles:public/styles --watch --poll --no-source-map"
+    "sass-watch": "sass styles:public/styles --watch --poll --no-source-map",
+    "heroku-postbuild" : "npm i --force && cd express-back-end && npm i"
   },
   "eslintConfig": {
     "extends": [
