@@ -43,8 +43,8 @@
     "eject": "react-scripts eject",
     "sass-watch": "sass styles:public/styles --watch --poll --no-source-map",
     "heroku-postbuild": "npm i --force",
-    "predeploy": "npm run start",
-    "deploy": "gh-pages -d start"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": [
