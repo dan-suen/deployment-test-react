@@ -20,6 +20,7 @@
     "bootstrap": "^5.2.1",
     "classnames": "^2.3.2",
     "date-fns": "^2.29.3",
+    "gh-pages": "^4.0.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",
@@ -40,7 +41,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "sass-watch": "sass styles:public/styles --watch --poll --no-source-map",
-    "heroku-postbuild" : "npm i --force"
+    "heroku-postbuild": "npm i --force",
+    "predeploy": "npm run start",
+    "deploy": "gh-pages -d start"
   },
   "eslintConfig": {
     "extends": [
@@ -60,7 +63,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:8080",
+  "proxy": "https://getogether-express.herokuapp.com/",
   "devDependencies": {
     "prettier": "2.7.1"
   }
