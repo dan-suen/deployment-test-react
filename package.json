@@ -44,7 +44,7 @@
     "sass-watch": "sass styles:public/styles --watch --poll --no-source-map",
     "heroku-postbuild": "npm i --force",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
