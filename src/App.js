@@ -23,7 +23,7 @@ export default function App() {
        <TopNav /> 
         <Routes>
           <Route path="/about" element={<About />} />
-          <Route path="/" element={<Main state={state} />} />
+          <Route exact path="/" element={<Main state={state} />} />
           <Route path="/past" element={<Past state={state}/>} />
           <Route path="/event/:id" element={<Event />} />
           <Route path="/user" element={<User state={state} />} />

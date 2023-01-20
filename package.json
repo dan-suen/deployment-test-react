@@ -6,7 +6,7 @@
     "node": "16.17.0",
     "npm": "9.2.0"
   },
-  "homepage": "https://dan-suen.github.io/deployment-test-react",
+  "homepage": "https://dan-suen.github.io/deployment-test-react/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
@@ -64,7 +64,9 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://getogether-express.herokuapp.com/",
+  "proxy": {
+    "/api/" : "https://getogether-express.herokuapp.com/"
+  },
   "devDependencies": {
     "prettier": "2.7.1"
   }

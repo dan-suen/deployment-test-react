@@ -19,12 +19,12 @@ export default function TopNav(props) {
   return (
     <Navbar expand="lg" sticky="top">
       <Container>
-        <a href="/" className="navbar-brand">Getogether</a>
+        <a href="/deployment-test-react" className="navbar-brand">Getogether</a>
 
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/past">Past Events</Nav.Link>
+            <Nav.Link href="/deployment-test-react/about">About</Nav.Link>
+            <Nav.Link href="/deployment-test-react/past">Past Events</Nav.Link>
           </Nav>
           <Nav>
             {!auth &&
@@ -32,7 +32,7 @@ export default function TopNav(props) {
                 <Login />
               </NavDropdown>
             }
-            {!auth && <Nav.Link href="/register">Sign up!</Nav.Link>}
+            {!auth && <Nav.Link href="/deployment-test-react/register">Sign up!</Nav.Link>}
             {auth && <Info />}
           </Nav>
         </Navbar.Collapse>

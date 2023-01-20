@@ -8,9 +8,11 @@ import * as serviceWorker from './serviceWorker';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-      <HashRouter>
+  <React.StrictMode>
+      <HashRouter basename=''>
         <App />
       </HashRouter> 
+  </React.StrictMode>
 );
 
 // ReactDOM.render(<BrowserRouter><App /></BrowserRouter> , document.getElementById("root"));
