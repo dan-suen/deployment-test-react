@@ -14,9 +14,9 @@ export default function useApplicationData(id) {
   useEffect(() => {
     if (id) {
       Promise.all([
-        axios.get(`/events/${id}`),
-        axios.get(`/events/${id}/host`),
-        axios.get(`/events/${id}/attendees`),
+        axios.get(`https://getogether-express.herokuapp.com/events/${id}`),
+        axios.get(`https://getogether-express.herokuapp.com/events/${id}/host`),
+        axios.get(`https://getogether-express.herokuapp.com/events/${id}/attendees`),
       ]).then((data) => {
         setBigData((prev) => {
           return {

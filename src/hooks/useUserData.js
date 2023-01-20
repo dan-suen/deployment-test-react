@@ -16,9 +16,9 @@ export default function useUserData() {
     }
     if(user !== null){
       Promise.all([
-        axios.get(`/users/${user.id}`),
-        axios.get(`/users/${user.id}/host`),
-        axios.get(`/users/${user.id}/join`),
+        axios.get(`https://getogether-express.herokuapp.com/users/${user.id}`),
+        axios.get(`https://getogether-express.herokuapp.com/users/${user.id}/host`),
+        axios.get(`https://getogether-express.herokuapp.com/users/${user.id}/join`),
       ]).then((data) => {
         let userEvents = 
           {

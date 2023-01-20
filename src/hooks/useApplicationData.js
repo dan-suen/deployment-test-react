@@ -11,8 +11,8 @@ export default function useApplicationData() {
   //fetches data from api and sets state
   useEffect(() => {
     Promise.all([
-      axios.get("/users"),
-      axios.get("/events"),
+      axios.get("https://getogether-express.herokuapp.com/users"),
+      axios.get("https://getogether-express.herokuapp.com/events"),
     ]).then((data) => {
       setState((prev) => {
         return {
